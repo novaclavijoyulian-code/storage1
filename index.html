@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pagina.js" defer></script>
+    <link rel="stylesheet" href="paginas.css">
+    <title>Registrar nombre</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Registrar</a>
+        <a href="segundapagina.html">Consultar datos</a>
+    </nav>
+
+    <h1>Registrar nombre</h1>
+
+    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+    <input type="text" id="ciudad" placeholder="Ingrese su ciudad">
+
+    <button id="guardar">Guardar</button>
+
+    <p id="mensaje"></p>
+
+    <section>
+    <h2>Respuestas a las preguntas de reflexión</h2>
+
+    <ol>
+        <li>La página 2 conoce mi nombre porque está guardado en sessionStorage.</li>
+
+        <li>getItem() devuelve null cuando no hay ningún dato guardado. Por eso usamos if para comprobarlo.</li>
+
+        <li>Al recargar la página, los datos permanecen. Al cerrar la pestaña, se pierde la información de sessionStorage de esa sesión.</li>
+
+        <li>No guardaría una contraseña en sessionStorage porque los datos pueden ser leídos o modificados mediante JavaScript.</li>
+    </ol>
+</section>
+</body>
+</html>
